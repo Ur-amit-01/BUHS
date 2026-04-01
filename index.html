@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>BUHS Patna | B.Pharmacy I Sem Exam Notification 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #eef2f9;
+      color: #1e2a41;
+      line-height: 1.5;
+      padding: 2rem 1.5rem;
+    }
+
+    .buhs-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 28px;
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    .university-header {
+      background: linear-gradient(105deg, #002b5c 0%, #004a7c 100%);
+      padding: 1.5rem 2rem 1.2rem 2rem;
+      border-bottom: 4px solid #ffaa33;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo-emblem {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .emblem-icon {
+      background: #ffcd7e20;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      backdrop-filter: blur(2px);
+      color: #ffcd7e;
+      border: 1px solid rgba(255,205,126,0.5);
+    }
+
+    .uni-text h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.2px;
+      color: white;
+    }
+
+    .uni-text p {
+      font-size: 0.8rem;
+      color: #d9e6f5;
+      margin-top: 4px;
+    }
+
+    .new-badge {
+      background: #ffaa33;
+      padding: 0.45rem 1rem;
+      border-radius: 40px;
+      font-weight: 800;
+      font-size: 0.75rem;
+      color: #002b5c;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .notification-ribbon {
+      background: #fff7e5;
+      border-left: 6px solid #ffaa33;
+      padding: 0.75rem 1.5rem;
+      margin: 1.5rem 2rem 0 2rem;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #7a6300;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .content-area {
+      padding: 1.8rem 2rem 2rem 2rem;
+    }
+
+    .page-title {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: #002b5c;
+      border-left: 5px solid #ffaa33;
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .info-highlight {
+      background: #f0f7fe;
+      border-radius: 20px;
+      padding: 1rem 1.8rem;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      border: 1px solid #cde3f0;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      font-weight: 500;
+    }
+
+    .info-item i {
+      color: #004a7c;
+      width: 24px;
+    }
+
+    .exam-table-wrapper {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+      border-radius: 20px;
+      border: 1px solid #e2edf2;
+      background: white;
+    }
+
+    .exam-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    .exam-table th {
+      background: #eef3fc;
+      padding: 1rem 1rem;
+      text-align: left;
+      font-weight: 700;
+      color: #004a7c;
+    }
+
+    .exam-table td {
+      padding: 0.9rem 1rem;
+      border-bottom: 1px solid #ecf3f8;
+    }
+
+    .section-card {
+      background: #ffffff;
+      border-radius: 24px;
+      border: 1px solid #e2edf2;
+      padding: 1.2rem 1.8rem;
+      margin: 1.8rem 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+
+    .section-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #002b5c;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-left: 4px solid #ffaa33;
+      padding-left: 12px;
+    }
+
+    .instruction-box {
+      background: #f8fafd;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 1.5rem 0;
+      border: 1px solid #e2edf2;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem 0 1rem;
+    }
+
+    .action-btn {
+      background: white;
+      border: 1.5px solid #004a7c;
+      padding: 0.75rem 1.6rem;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #004a7c;
+    }
+
+    .action-btn i {
+      font-size: 0.9rem;
+    }
+
+    .action-btn:hover {
+      background: #004a7c;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,74,124,0.2);
+    }
+
+    .primary-btn {
+      background: #ffaa33;
+      border-color: #ffaa33;
+      color: #002b5c;
+    }
+
+    .primary-btn:hover {
+      background: #e69500;
+      border-color: #e69500;
+      color: #002b5c;
+    }
+
+    /* Modal styles for image + music */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .modal-overlay.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .modal-card {
+      background: white;
+      max-width: 550px;
+      width: 90%;
+      border-radius: 36px;
+      text-align: center;
+      padding: 1.5rem 1.8rem 1.8rem;
+      box-shadow: 0 30px 40px rgba(0,0,0,0.3);
+      animation: fadeInUp 0.4s ease;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .modal-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 24px;
+      margin-bottom: 1rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .close-modal {
+      background: #002b5c;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.8rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: 0.2s;
+    }
+
+    .close-modal:hover {
+      background: #ffaa33;
+      color: #002b5c;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 1rem;
+      }
+      .content-area {
+        padding: 1.2rem;
+      }
+      .page-title {
+        font-size: 1.4rem;
+      }
+      .uni-text h1 {
+        font-size: 1.2rem;
+      }
+      .notification-ribbon {
+        margin: 1rem 1rem 0 1rem;
+      }
+      .section-card {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="buhs-container">
+  <div class="university-header">
+    <div class="header-flex">
+      <div class="logo-emblem">
+        <div class="emblem-icon">
+          <i class="fas fa-university"></i>
+        </div>
+        <div class="uni-text">
+          <h1>Bihar University of Health Sciences, Patna</h1>
+          <p>भारतीय आरोग्य विज्ञान विश्वविद्यालय, बिहार | State University (Est. 2021)</p>
+        </div>
+      </div>
+      <div class="new-badge">
+        <i class="fas fa-calendar-alt"></i> ACADEMIC NOTIFICATION
+      </div>
+    </div>
+  </div>
+
+  <div class="notification-ribbon">
+    <span><i class="fas fa-file-alt"></i> <strong>OFFICIAL EXAMINATION NOTIFICATION</strong> :: B. Pharmacy (First Semester) – 2025–29 Batch</span>
+    <span><i class="fas fa-clock"></i> Published: 29-Mar-2026</span>
+  </div>
+
+  <div class="content-area">
+    <div class="page-title">
+      <i class="fas fa-graduation-cap" style="margin-right: 12px;"></i> B. Pharmacy First Semester Examination – July 2026
+    </div>
+
+    <!-- Key info strip (no duration/centre cards) -->
+    <div class="info-highlight">
+      <div class="info-item"><i class="fas fa-calendar-check"></i> <strong>Exam Start:</strong> July 10, 2026</div>
+      <div class="info-item"><i class="fas fa-users"></i> <strong>Batch:</strong> B.Pharm 2025–29</div>
+      <div class="info-item"><i class="fas fa-book-open"></i> <strong>Mode:</strong> Offline (Written)</div>
+      <div class="info-item"><i class="fas fa-passport"></i> <strong>Admit Card:</strong> Available from June 28, 2026</div>
+    </div>
+
+    <!-- Detailed Schedule Table (expanded) - all dates in July -->
+    <div class="section-card">
+      <h3><i class="fas fa-table-list"></i> Detailed Theory Examination Schedule</h3>
+      <div class="exam-table-wrapper">
+        <table class="exam-table">
+          <thead>
+            <tr><th>Date (July 2026)</th><th>Day</th><th>Subject Code</th><th>Subject Name</th><th>Time</th><th>Max Marks</th>  </tr>
+          </thead>
+          <tbody>
+            <tr><td>July 10, 2026</td><td>Friday</td><td>BP101T</td><td>Human Anatomy and Physiology I – Theory</td><td>10:00 AM – 1:00 PM</td><td>75</td></tr>
+            <tr><td>July 14, 2026</td><td>Tuesday</td><td>BP102T</td><td>Pharmaceutical Analysis I – Theory</td><td>10:00 AM – 1:00 PM</td><td>75</td></tr>
+            <tr><td>July 17, 2026</td><td>Friday</td><td>BP103T</td><td>Pharmaceutics I – Theory</td><td>10:00 AM – 1:00 PM</td><td>75</td></tr>
+            <tr><td>July 21, 2026</td><td>Tuesday</td><td>BP104T</td><td>Pharmaceutical Inorganic Chemistry – Theory</td><td>10:00 AM – 1:00 PM</td><td>75</td></tr>
+            <tr><td>July 24, 2026</td><td>Friday</td><td>BP105T</td><td>Communication Skills & Remedial English</td><td>10:00 AM – 1:00 PM</td><td>75</td></tr>
+            <tr><td>July 28, 2026</td><td>Tuesday</td><td>BP106RBT</td><td>Remedial Biology / Mathematics (Bridge Course)</td><td>10:00 AM – 1:00 PM</td><td>75</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem;"><i class="fas fa-flask"></i> <strong>Practical Examinations:</strong> Will be conducted from July 31 to August 4, 2026 at respective college laboratories. Internal examiners will coordinate schedules. Separate practical hall tickets will be issued.</p>
+    </div>
+
+    <!-- Syllabus & Marking Scheme (extra detailed) -->
+    <div class="section-card">
+      <h3><i class="fas fa-chalkboard-user"></i> Examination Scheme & Syllabus Coverage</h3>
+      <p>Each theory paper shall be of 3 hours duration carrying 75 marks. The question paper pattern is as follows:</p>
+      <ul style="margin: 0.8rem 0 0.5rem 1.5rem;">
+        <li><strong>Section A:</strong> 10 compulsory short answer questions (2 marks each) → 20 marks</li>
+        <li><strong>Section B:</strong> 5 out of 6 long answer questions (8 marks each) → 40 marks</li>
+        <li><strong>Section C:</strong> 3 out of 4 analytical/case-based questions (5 marks each) → 15 marks</li>
+      </ul>
+      <p style="margin-top: 0.8rem;"><strong>Syllabus coverage:</strong> Full syllabus as prescribed by Bihar University of Health Sciences, PCI norms. Topics include: BP101T (Tissues, skeletal system, body fluids), BP102T (Errors, volumetric analysis, acid-base titrations), BP103T (Dosage forms, prescriptions, posology), BP104T (Impurities, limit tests, medicinal gases), BP105T (Grammar, communication, presentation skills). Students are advised to refer to the official syllabus document available on the university website.</p>
+    </div>
+
+    <!-- Passing Criteria & Grading -->
+    <div class="section-card">
+      <h3><i class="fas fa-chart-line"></i> Minimum Passing Marks & Grading</h3>
+      <p>As per University ordinance, a candidate must secure <strong>50% marks (i.e., 38 out of 75)</strong> in each theory paper separately and 50% in practical examinations to pass the semester. Aggregate passing percentage required: 50% overall in the semester. Grading will be on a 10-point scale (CGPA). Students failing in one or more subjects will be eligible for supplementary examination as per university norms.</p>
+    </div>
+
+    <!-- Detailed instructions (expanded) -->
+    <div class="instruction-box">
+      <h3 style="margin-bottom: 12px; font-size: 1.2rem;"><i class="fas fa-clipboard-list"></i> Important Instructions for Candidates</h3>
+      <ul style="margin-left: 1.2rem;">
+        <li><strong>Admit Card:</strong> Mandatory to download from <strong>https://buhs.ac.in/examportal</strong> from June 28, 2026. No candidate will be allowed without a printed admit card and valid college ID/Aadhaar.</li>
+        <li><strong>Reporting Time:</strong> Candidates must report at the examination center by 9:00 AM. Entry closes at 9:45 AM. Latecomers will not be permitted.</li>
+        <li><strong>Exam Center:</strong> The exam will be held at designated centers across Patna, Gaya, Muzaffarpur, and Bhagalpur. Center details will be printed on the admit card.</li>
+        <li><strong>Permitted Items:</strong> Only transparent water bottle, ballpoint pen (blue/black), and the admit card. No electronic devices, smart watches, calculators, or study material allowed inside the hall.</li>
+        <li><strong>Answer Sheets:</strong> Use only blue/black ink. Writing in pencil is prohibited except for diagrams. Overwriting and use of whitener may lead to cancellation.</li>
+        <li><strong>COVID / Health Advisory:</strong> Wearing masks is optional but recommended. Sanitizers will be available at the venue.</li>
+        <li><strong>Unfair Means:</strong> Any malpractice will result in disqualification and disciplinary action as per University Ordinance.</li>
+      </ul>
+    </div>
+
+    <!-- Additional details about result and revaluation -->
+    <div class="section-card">
+      <h3><i class="fas fa-file-signature"></i> Result & Revaluation Process</h3>
+      <p>Results will be declared within 45 days after the last examination. Students can view their results on the official BUHS portal. Candidates who wish to apply for revaluation / scrutiny of answer scripts may do so within 15 days of result declaration by paying the prescribed fee. Supplementary examinations for failed subjects will be held in October/November 2026.</p>
+      <p style="margin-top: 8px;"><strong>Contact for Examination Wing:</strong> Office of the Controller of Examinations, Bihar University of Health Sciences, Patna – 800014. Email: coe@buhs.ac.in | Helpline: 0612-254xxxx (during office hours).</p>
+    </div>
+
+    <!-- Action Buttons (all trigger the modal with image & music) -->
+    <div class="btn-group">
+      <button class="action-btn" id="admitCardBtn"><i class="fas fa-download"></i> Download Admit Card</button>
+      <button class="action-btn" id="timeTableBtn"><i class="fas fa-calendar-week"></i> Detailed Timetable (PDF)</button>
+      <button class="action-btn primary-btn" id="syllabusBtn"><i class="fas fa-book"></i> Syllabus & Scheme</button>
+      <button class="action-btn" id="verifyBtn"><i class="fas fa-check-circle"></i> Verify Notification</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Image + Music (no text about April Fool) -->
+<div id="prankModal" class="modal-overlay">
+  <div class="modal-card">
+    <!-- Image and audio files are expected to be in the same folder as this HTML file -->
+    <img class="modal-image" id="modalImage" src="ladle.jpg" alt="Surprise" onerror="this.src='https://picsum.photos/id/104/500/300?random=1'">
+    <audio id="modalAudio" preload="auto">
+      <source src="meow_ghop.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <button class="close-modal" id="closeModalBtn"><i class="fas fa-thumbs-up"></i> Close</button>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('prankModal');
+  const closeBtn = document.getElementById('closeModalBtn');
+  const modalAudio = document.getElementById('modalAudio');
+
+  function showModalWithMedia() {
+    modal.classList.add('active');
+    // Play music when modal opens
+    if (modalAudio) {
+      modalAudio.currentTime = 0; // restart from beginning
+      modalAudio.play().catch(e => console.log("Audio play failed:", e));
+    }
+  }
+
+  function closeModalAndStopMusic() {
+    modal.classList.remove('active');
+    if (modalAudio) {
+      modalAudio.pause();
+      modalAudio.currentTime = 0;
+    }
+  }
+
+  // Attach to all action buttons
+  const actionBtns = document.querySelectorAll('.action-btn');
+  actionBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      showModalWithMedia();
+    });
+  });
+
+  closeBtn.addEventListener('click', closeModalAndStopMusic);
+  // Click on overlay background also closes
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModalAndStopMusic();
+    }
+  });
+  // Escape key closes modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModalAndStopMusic();
+    }
+  });
+
+  // Optional: preload image fallback note
+  const modalImage = document.getElementById('modalImage');
+  modalImage.onerror = function() {
+    this.src = 'https://picsum.photos/id/104/500/300?random=1';
+    this.alt = 'Surprise image placeholder';
+  };
+</script>
+</body>
+</html>
